@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Footer from "./components/Footer";
+// import { useState } from "react";
+// import Parent from "./components/Parent";
+// import Greeting from "./components/Greeting";
+import Netflix from "./components/Netflix";
 
 function App() {
+  // const [clock, setClock] = useState("");
+
+  // const newDate = new Date().toLocaleDateString();
+
+  // const time = () => {
+  //   const date = new Date();
+  //   const uptime = date.toLocaleTimeString();
+  //   setClock(uptime);
+  // };
+  // setInterval(time, 1000);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <h1>Hello React world!</h1>
+      <h2>Todays date is {newDate} </h2>
+      <h3>The current time is {clock}</h3>
+
+      <Parent />
+
+      <Greeting /> */}
+      <Netflix />
+
+      <Footer />
+    </>
   );
 }
 
